@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	
+	float c, f;
+	
+	cout<<"Enter temperature in Fahrenheit: "<<endl;
+	cin>> f;
+	
+	c = 5*(f - 32)/9;
+	
+	cout<<"Temperature in Celsius: "<<c<<endl;
+	
+}
+
+
+Output - 
+
+Enter temperature in Fahrenheit:
+90
+Temperature in Celsius: 32.2222
