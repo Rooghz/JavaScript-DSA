@@ -18,11 +18,7 @@ int main() {
 }
 
 
-/* 
-
 Output - 
 
 8
 Sum of N no is: 20 
-
-*/
