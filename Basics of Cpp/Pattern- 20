@@ -12,19 +12,13 @@ int main() {
 	
 	    //Print stars
 	    
-	    int star = n - i;
+	    int star = n - i + 1;
 	    
 	    while(star) {
 	    	cout<<"*";
 	    	star = star - 1;
 		}
 		
-		int j = 1;
-		
-		while(j<=i) {
-		  j = j + 1;
-        }
-        
         cout<<endl;
 		
 	    i = i + 1;
@@ -38,6 +32,7 @@ int main() {
 Output -
 
 5
+*****
 ****
 ***
 **
