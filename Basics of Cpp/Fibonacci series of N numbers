@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+
+int main() {
+            
+     int a = 0;
+     int b = 1;
+     
+     cout<<"Define the value of N : "<<endl;
+          
+     int n;
+     cin >> n;
+     
+     cout<<"Fibonacci series of N numbers : "<<endl;
+     
+     cout<<a<<" "<<b<<" ";
+     
+     for( int i=1; i<=n; i++ ) {
+     	
+     	int nextNumber = a + b;
+     	cout<<nextNumber<<" ";
+     	
+     	a = b;
+     	
+     	b = nextNumber;
+     	
+	 }
+       
+}
+
+
+Output -
+
+Define the value of N :
+10
+Fibonacci series of N numbers :
+0 1 1 2 3 5 8 13 21 34 55 89
