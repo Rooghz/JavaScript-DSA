@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+
+int main() {
+            
+     int n;
+     
+	 cout<<"Enter the Numbers you want to print: "<<endl;
+     cin >> n;
+     
+     cout<<"Printing the sum of numbers: "<<endl;
+     
+     int sum = 0;
+     
+     for(int i =1; i<=n; i++) {
+     	
+     	sum += i;
+     	
+	 }
+	 
+	    cout<<sum<<endl;
+       
+}
+
+
+
+Output -
+
+Enter the Numbers you want to print:
+5
+Printing the sum of numbers:
+15
+
