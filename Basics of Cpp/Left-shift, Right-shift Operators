@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+
+int main() {
+
+    
+   //Left-shift, Right-shift operators
+
+   cout<<(15<<1)<<endl;
+   cout<<(13<<2)<<endl;
+   cout<<(16>>1)<<endl;
+   cout<<(17>>2)<<endl;
+   
+   
+}
+
+Output -
+
+30
+52
+8
+4
