@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+
+int main() {
+         
+	  int a;
+	  cout<<"Enter the first number"<<endl;
+	  cin>>a;
+	  
+	  int b;
+	  cout<<"Enter the second number"<<endl;
+	  cin>>b;
+	  
+	  char op;
+	  cout<<"Which operation you would like to see?"<<endl;
+	  cin>>op;
+	  
+	  switch( op ) {
+	  	
+	  	case '+': cout<<( a + b )<<endl;
+	  	          break;
+	  	        
+	  	case '-': cout<<( a - b )<<endl;
+	  	          break;
+	  	        
+	  	case '*': cout<<( a * b )<<endl;
+	  	          break;
+	  	          
+	  	case '/': cout<<( a / b )<<endl;
+	  	          break;
+					
+		case '%': cout<<( a % b )<<endl;
+	  	          break;			          
+	  	       
+	  	default: cout<<"Please use +,-,*,/,%"<<endl;
+	  	
+	}
+}
+
+Output -
+
+8
+Enter the second number
+4
+Which operation you would like to see?
+*
+32
