@@ -14,3 +14,5 @@ using namespace std;
     	return 0;
 	}
 
+Output -
+Value at 14th index: 63
