@@ -1,1 +1,16 @@
+#include<iostream>
+using namespace std;
+    
+    int main() {
+    	
+    	//Declare
+    	int num[15];
+    	
+    	//accessing an array
+    	cout<<"Value at 14th index: "<< num[14] <<endl;
+    	
+    	//have not declared anything so we will get garbage value
+    	
+    	return 0;
+	}
 
