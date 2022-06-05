@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+    
+    void printArray(int arr[], int size) {
+    	
+    	cout<<"Printing the array"<<endl;
+    	
+    	for(int i=0; i<size; i++) {
+    		cout<< arr[i] <<" ";
+		}
+		cout<<"Printing done"<<endl;
+	}
+    
+    int main() {
+    	
+    	int nummber[15];
+    	
+    	int third[15] = {3,6};
+    	
+    	printArray(third,15);
+			
+	}
+  
+  
+Output - 
+  
+Printing the array
+3 6 0 0 0 0 0 0 0 0 0 0 0 0 0 Printing done
