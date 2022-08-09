@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    int n=5;
+    
+    for(int row=0; row<2*n; row++){
+    	int totalColsInRow = row > n ? 2*n - row: row;
+        for(int cols=0; cols<totalColsInRow; cols++){
+            cout<<"* ";
+        }     
+        cout<<endl;
+    }
+    return 0;
+};
+
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
