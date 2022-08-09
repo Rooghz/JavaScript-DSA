@@ -1,0 +1,31 @@
+using namespace std;
+int main(){
+
+    int n=5;
+    
+    for(int row=0; row<2*n; row++){
+    	
+    	int totalColsInRow = row > n ? 2*n - row: row;
+    	
+    	int totalSpaces = n - totalColsInRow;
+    	for(int cols=0; cols<totalSpaces; cols++){
+            cout<<" ";
+        }     
+        for(int cols=0; cols<totalColsInRow; cols++){
+            cout<<"* ";
+        }     
+        cout<<endl;
+    }
+    return 0;
+};
+
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
