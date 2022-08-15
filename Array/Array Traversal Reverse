@@ -36,3 +36,9 @@ int main() {
 	
 	return 0;
 }  // } Driver Code Ends
+
+
+Input:
+numbers = [54, 43, 2, 1, 5]
+Output: 
+5 1 2 43 54
