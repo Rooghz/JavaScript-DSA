@@ -1,0 +1,25 @@
+int posAverage(int numbers[], int size){
+    
+    
+    //Write your code to find average of positive numbers in numbers array
+    //return the answer
+    int sum = 0;
+    int count = 0;
+    
+    for(int i=0; i<size; i++){
+        if(numbers[i]>=0){
+            sum += numbers[i];
+            count++;
+        }
+    }
+    return sum/count;
+}
+
+Input:
+numbers = [-12, 8, -7, 6, 12, -9, 14]
+Output:
+avg = 10
+Explanation: The positive numbers are
+8 6 12 14.
+The sum is 8+6+12+14 = 40,
+Average = 40/4 = 10
