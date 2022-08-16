@@ -1,0 +1,24 @@
+class Solution
+{
+public:
+    int largest(vector<int> &arr, int n)
+    {
+     
+     int maxElement = arr[0];
+     
+     for(int i=0; i<n; i++){
+         maxElement = max(maxElement,arr[i]);
+     }
+     return maxElement;
+     
+    }
+};
+
+
+Input:
+n = 5
+A[] = {1, 8, 7, 56, 90}
+Output:
+90
+Explanation:
+The largest element of given array is 90.
