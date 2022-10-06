@@ -1,0 +1,39 @@
+void toBinary(string N)
+{
+    // your code here
+    int x= stoi(N);
+
+    string s;
+
+    while(x>0)
+
+    {
+
+        int t=x%2;
+
+        s+=to_string(t);
+
+        x=x/2;
+
+    }
+
+    reverse(s.begin(),s.end());
+
+    cout<<s;    
+        
+}
+
+
+-----------------
+
+Example 1:
+
+
+Input: N = 7
+Output: 111
+
+Example 2:
+
+
+Input: N = 33
+Output: 100001
