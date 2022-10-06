@@ -1,0 +1,20 @@
+int findPattern(string s, string p){
+    // code here
+    int found = s.find(p);
+    
+    while(found != string::npos)
+        return found;
+}
+
+
+-----------------
+
+Example 1:
+
+Input:
+s = "Hello"
+p = "llo"
+Output: 
+2
+Explanation: llo starts from the second
+index in Hello.
