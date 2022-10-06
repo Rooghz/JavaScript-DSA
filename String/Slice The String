@@ -1,0 +1,23 @@
+//User function Template for C++
+
+// functions should slice the given string
+// i.e. remove the first and the last character
+// of the given string and return the sliced 
+// string
+
+string sliceString(string s){
+    // code here
+    int n =s.length();
+    
+    return s.substr(1,n-2);
+}
+
+
+-----
+
+Input:
+s = "Hello"
+Output: 
+ell
+Explanation: The first and last character
+are ignored.
