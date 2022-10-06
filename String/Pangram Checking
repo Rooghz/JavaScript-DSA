@@ -1,0 +1,42 @@
+class Solution{
+  public:
+    bool isPanagram(string str){
+    
+    //Your code here
+    int n = str.length();
+    if(n<26)
+        return false;
+        
+    bool visited[26] = {0};
+    
+    for(int i=0; i<n; i++){
+        char x = str[i];
+        
+        if(x >= 'a' && x <= 'z')
+            visited[x-'a'] = true;
+        if(x >= 'A' && x <= 'Z')
+            visited[x-'A'] = true;
+    }
+    
+    for(int i=0; i<26; i++){
+        if(visited[i] == false)
+            return false;
+    }
+    return true;
+    }
+};
+
+
+-------------------
+
+Example 1:
+
+Input:
+s = Thequickbrownfoxjumpsoverthelazydog
+Output: 1
+
+Example 2:
+
+Input:
+s = HeavyDuty
+Output: 0
