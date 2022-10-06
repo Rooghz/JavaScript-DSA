@@ -1,0 +1,47 @@
+class Solution
+{
+    public:
+    //Function is to check whether two strings are anagram of each other or not.
+    bool isAnagram(string a, string b){
+        
+        // Your code here
+        int n1 = a.length();
+        int n2 = b.length();
+        
+        if(n1 != n2)
+            return false;
+            
+        int count[256] = {0};
+        
+        for(int i=0; i<n1; i++){
+            count[a[i]]++;
+        }
+        for(int i=0; i<n2; i++){
+            count[b[i]]--;
+        }
+        
+        for(int i=0; i<256; i++){
+            
+            if(count[i] != 0) return false;
+        }
+        return true;
+    }
+
+};
+
+
+----------
+
+Example 1:
+
+Input:a = geeksforgeeks, b = forgeeksgeeks
+Output: YES
+Explanation: Both the string have same characters with
+        same frequency. So, both are anagrams.
+
+Example 2:
+
+Input:a = allergy, b = allergic
+Output: NO
+Explanation: Characters in both the strings are 
+        not same, so they are not anagrams.
